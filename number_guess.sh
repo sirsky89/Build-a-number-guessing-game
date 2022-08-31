@@ -53,3 +53,5 @@ echo "Guess the secret number between 1 and 1000:"
 
 USER_ID=$($PSQL "SELECT user_id FROM users WHERE username = '$USERNAME'")
 INSERT_GAME=$($PSQL "INSERT INTO games(number_guesses, user_id) values($GUESS, $USER_ID)")
+
+# commit 2
